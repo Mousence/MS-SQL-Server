@@ -33,13 +33,13 @@ BEGIN
             VALUES
                 (@group, @discipline, @teacher, @date, @time, IIF(@date < GETDATE(), 1, 0), @number_of_lesson + 1),
                 (@group, @discipline, @teacher, @date, DATEADD(MINUTE, 95, @time), IIF(@date < GETDATE(), 1, 0), @number_of_lesson + 2),
-				(@group, @discipline, @teacher, @date, DATEADD(MINUTE, 95, @time), IIF(@date < GETDATE(), 1, 0), @number_of_lesson + 3);
+				(@group, @discipline, @teacher, @date, DATEADD(MINUTE, 190, @time), IIF(@date < GETDATE(), 1, 0), @number_of_lesson + 3);
         END
         SET @number_of_lesson = @number_of_lesson + 3
         IF DATENAME(WEEKDAY, @date) IN ('Saturday', 'Sunday')
             SET @date = DATEADD(DAY, 1, @date)
         ELSE
-            SET @date = DATEADD(DAY, 2, @date)
+            SET @date = DATEADD(DAY, 6, @date)
     END
 END
 
