@@ -1,13 +1,9 @@
-USE MyBase;
+USE MyBase
 
 SELECT
-    Directions.direction_name AS 'Направление',
-    COUNT(Students.stud_id) AS 'Количество студентов'
-FROM
-    Directions
-JOIN
-    Groups ON Directions.direction_id = Groups.direction
-JOIN
-    Students ON Groups.group_id = Students.[group]
-GROUP BY
-    Directions.direction_name;
+	[Направление обучения]	= direction_name,
+	[Количество студентов]	= COUNT(stud_id)
+FROM	Students, Groups, Directions
+WHERE	Students.[group] = Groups.group_id
+AND		Groups.direction = Directions.direction_id
+GROUP BY direction_name

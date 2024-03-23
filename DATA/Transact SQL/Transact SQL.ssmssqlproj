@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
-<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="DML">
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Transact SQL">
   <Items>
     <LogicalFolder Name="Connections" Type="2" Sorted="true">
       <Items>
         <ConnectionNode Name="DESKTOP-GMGD17F\SQLEXPRESS:DESKTOP-GMGD17F\79141">
-          <Created>2024-03-12T21:52:54.5269143+09:00</Created>
+          <Created>2024-03-19T21:22:41.4531843+09:00</Created>
           <Type>SQL</Type>
           <Server>DESKTOP-GMGD17F\SQLEXPRESS</Server>
           <UserName />
@@ -19,53 +19,47 @@
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
-        <FileNode Name="SQLQuery 1 Select teachers.sql">
+        <FileNode Name="SQLQuery 1 - INSERT INTO SCHEDULE.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-GMGD17F\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>DESKTOP-GMGD17F\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>SQLQuery 1 Select teachers.sql</FullPath>
+          <FullPath>SQLQuery 1 - INSERT INTO SCHEDULE.sql</FullPath>
         </FileNode>
-        <FileNode Name="SQLQuery 2 Select students.sql">
+        <FileNode Name="SQLQuery 2 - Fill Schedule.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-GMGD17F\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>DESKTOP-GMGD17F\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>SQLQuery 2 Select students.sql</FullPath>
+          <FullPath>SQLQuery 2 - Fill Schedule.sql</FullPath>
         </FileNode>
-        <FileNode Name="SQLQuery 3 Groups Disciplines.sql">
+        <FileNode Name="SQLQuery 3 - Create Proc Select.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-GMGD17F\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>DESKTOP-GMGD17F\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>SQLQuery 3 Groups Disciplines.sql</FullPath>
+          <FullPath>SQLQuery 3 - Create Proc Select.sql</FullPath>
         </FileNode>
-        <FileNode Name="SQLQuery 4 Count Std Directions.sql">
+        <FileNode Name="SQLQuery 4 - Alter Schedule.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-GMGD17F\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>DESKTOP-GMGD17F\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>SQLQuery 4 Count Std Directions.sql</FullPath>
+          <FullPath>SQLQuery 4 - Alter Schedule.sql</FullPath>
         </FileNode>
-        <FileNode Name="SQLQuery 5 Disciplines and No L.sql">
+        <FileNode Name="SQLQuery 5 - Create Proc Discipline Group.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-GMGD17F\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>DESKTOP-GMGD17F\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>SQLQuery 5 Disciplines and No L.sql</FullPath>
+          <FullPath>SQLQuery 5 - Create Proc Discipline Group.sql</FullPath>
         </FileNode>
-        <FileNode Name="SQLQuery 7 COUNT Teachers on discipline.sql">
+        <FileNode Name="SQLQuery 6 - Create Proc Add discipline and group.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-GMGD17F\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>DESKTOP-GMGD17F\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>SQLQuery 7 COUNT Teachers on discipline.sql</FullPath>
+          <FullPath>SQLQuery 6 - Create Proc Add discipline and group.sql</FullPath>
         </FileNode>
-        <FileNode Name="SQLQuery1.sql">
+        <FileNode Name="SQLQuery 7 - Add.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-GMGD17F\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>DESKTOP-GMGD17F\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>SQLQuery1.sql</FullPath>
-        </FileNode>
-        <FileNode Name="SQLQuery2.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-GMGD17F\SQLEXPRESS:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>DESKTOP-GMGD17F\SQLEXPRESS</AssociatedConnSrvName>
-          <AssociatedConnUserName />
-          <FullPath>SQLQuery2.sql</FullPath>
+          <FullPath>SQLQuery 7 - Add.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
