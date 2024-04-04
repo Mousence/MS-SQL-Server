@@ -25,6 +25,12 @@
           <AssociatedConnUserName />
           <FullPath>SQLQuery 1 - INSERT INTO SCHEDULE.sql</FullPath>
         </FileNode>
+        <FileNode Name="SQLQuery 10.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-GMGD17F\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-GMGD17F\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery 10.sql</FullPath>
+        </FileNode>
         <FileNode Name="SQLQuery 2 - Fill Schedule.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-GMGD17F\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>DESKTOP-GMGD17F\SQLEXPRESS</AssociatedConnSrvName>
@@ -60,6 +66,36 @@
           <AssociatedConnSrvName>DESKTOP-GMGD17F\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>SQLQuery 7 - Add.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery 7 - INSERT celebrations.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-GMGD17F\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-GMGD17F\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery 7 - INSERT celebrations.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery 8 - Days and number of lesson.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-GMGD17F\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-GMGD17F\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery 8 - Days and number of lesson.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery 9.1 .sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-GMGD17F\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-GMGD17F\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery 9.1 .sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery6 - PROC add_stacionar_to_schedule.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-GMGD17F\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-GMGD17F\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery6 - PROC add_stacionar_to_schedule.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery9 - FUNCTION isCelebration.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-GMGD17F\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-GMGD17F\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery9 - FUNCTION isCelebration.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>

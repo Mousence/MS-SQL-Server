@@ -1,4 +1,6 @@
-CREATE PROCEDURE my_sp_select_discipline_for_group_from_schedule 
+ALTER PROCEDURE my_sp_select_discipline_for_group_from_schedule 
+@group		NVARCHAR(10),
+@discipline	NVARCHAR(50)
 AS
 SELECT 
 		lesson_id,
@@ -10,11 +12,11 @@ SELECT
 		[Статус]		= IIF([Schedule].[spent] = 1, 'Проведено', 'Запланировано'),	
 		[Номер занятия] = number_of_lesson,
 		[Тема занятия]  = subject_of_lesson
-	FROM Schedule
-	JOIN Groups		 ON ([group] = group_id)
-	JOIN Disciplines ON (discipline = discipline_id)
-	JOIN Teachers	 ON (teacher = teacher_id)
+	FROM MyBase.dbo.Schedule
+	JOIN MyBase.dbo.Groups		 ON ([group] = group_id)
+	JOIN MyBase.dbo.Disciplines ON (discipline = discipline_id)
+	JOIN MyBase.dbo.Teachers	 ON (teacher = teacher_id)
 
-WHERE group_name LIKE ('%PD_321%')
-AND	  Disciplines.discipline_name LIKE ('%MS SQL server%')
+WHERE group_name LIKE (@group)
+AND	  Disciplines.discipline_name LIKE (@discipline)
 

@@ -11,6 +11,8 @@ DECLARE @start_date			DATE		= '2024-02-27'
 DECLARE @date				DATE		= @start_date
 DECLARE @time				TIME		= '13:30'
 
+DECLARE @learning_days	NVARCHAR(50) = 'Tuesday,Thursday,Saturday'
+
 WHILE @number_of_lesson < @number_of_lessons
 BEGIN
 	IF NOT EXISTS
@@ -41,26 +43,13 @@ BEGIN
 			SET @date = DATEADD(DAY, 3, @date)
 END
 
+	--DECLARE @learning_days	NVARCHAR(50) = 'Tuesday, Thursday,Saturday'
+	--PRINT DATEADD(DAY, IIF(DATENAME(WEEKDAY, @date) IN (SELECT TOP 2 * FROM string_split(@learning_days, ',')),2,3), @date)
 ---------------------------------------------------------------------------------------------------
 
 --EXECUTE my_sp_select_from_schedule;
 --EXECUTE my_sp_select_discipline_for_group_from_schedule;
 
-SELECT 
-		lesson_id,
-		[Группа] = group_name,
-		[Дисциплина] = Disciplines.discipline_name,
-		[Преподаватель] = FORMATMESSAGE('%s %s %s', last_name, first_name, middle_name),
-		[Дата]			= [Schedule].[date],
-		[Время]			= [Schedule].[time],
-		[Статус]		= IIF([Schedule].[spent] = 1, 'Проведено', 'Запланировано'),	
-		[Номер занятия] = number_of_lesson,
-		[Тема занятия]  = subject_of_lesson
-	FROM Schedule
-	JOIN Groups		 ON ([group] = group_id)
-	JOIN Disciplines ON (discipline = discipline_id)
-	JOIN Teachers	 ON (teacher = teacher_id)
-
-WHERE group_name LIKE ('%PD_321%')
-AND	  discipline_name LIKE ('%MS SQL server%')
+--SELECT value FROM string_split(@learning_days, ',')
+--SELECT ROW_NUMBER() OVER (order by value) as rownumber, value FROM string_split(@learning_days, ',') 
 
